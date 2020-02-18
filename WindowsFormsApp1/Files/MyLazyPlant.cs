@@ -159,7 +159,6 @@ namespace WindowsFormsApp1.EnglishVersion
             List<PictureBox> images = new List<PictureBox>();
             images.Add(pictureBox9);
             images.Add(pictureBox10);
-            images.Add(pictureBox11);
             foreach (var im in images)
             {
                 im.Visible = false;
@@ -168,23 +167,6 @@ namespace WindowsFormsApp1.EnglishVersion
             int index = random.Next(images.Count);
             images[index].Visible = true;
             images[index].BringToFront();
-            switch (index)
-            {
-                case 0:
-                    pictureBox12.Visible = false;
-                    pictureBox13.Visible = false;
-                    break;
-                case 1:
-                    pictureBox12.Visible = false;
-                    pictureBox13.Visible = false;
-                    break;
-                case 2:
-                    pictureBox12.Visible = true;
-                    pictureBox13.Visible = true;
-                    break;
-                default:
-                    break;
-            }
         }
 
         private void MyLazyPlant_Load(object sender, EventArgs e)
